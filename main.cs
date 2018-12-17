@@ -171,7 +171,6 @@ namespace 類義語とか調べるやつ
                 Console.WriteLine("検索文字");
                 Console.WriteLine(str);
                 SQLiteUtil.SearchWordResult wordResult = util.SearchWord(str);
-
               
                 var synset = wordResult.GetResult
                     .Select(x => x.wordid)
